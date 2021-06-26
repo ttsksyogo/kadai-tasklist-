@@ -28,7 +28,7 @@ public class NewServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("_token", request.getSession());
+
 
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
 		rd.forward(request, response);
